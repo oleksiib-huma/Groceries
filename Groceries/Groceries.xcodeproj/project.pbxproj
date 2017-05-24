@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3511ED570570073B0ED /* AppDelegate.swift */; };
-		1A69A3541ED570570073B0ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3531ED570570073B0ED /* ViewController.swift */; };
 		1A69A3571ED570570073B0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3551ED570570073B0ED /* Main.storyboard */; };
 		1A69A3591ED570570073B0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3581ED570570073B0ED /* Assets.xcassets */; };
 		1A69A35C1ED570570073B0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */; };
+		1A69A3641ED574FB0073B0ED /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3631ED574FB0073B0ED /* MainViewController.swift */; };
+		1A69A3661ED5751C0073B0ED /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3651ED5751C0073B0ED /* MainViewPresenter.swift */; };
+		1A69A36A1ED5755C0073B0ED /* GroceriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3691ED5755C0073B0ED /* GroceriesRouter.swift */; };
+		1A69A36C1ED586B80073B0ED /* ShoppingListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36B1ED586B80073B0ED /* ShoppingListDataSource.swift */; };
+		1A69A36E1ED5874A0073B0ED /* ItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36D1ED5874A0073B0ED /* ItemsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A69A34E1ED570570073B0ED /* Groceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A69A3511ED570570073B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A69A3531ED570570073B0ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A69A3561ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A69A3581ED570570073B0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A69A35B1ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A69A35D1ED570570073B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A69A3631ED574FB0073B0ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1A69A3651ED5751C0073B0ED /* MainViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		1A69A3691ED5755C0073B0ED /* GroceriesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceriesRouter.swift; sourceTree = "<group>"; };
+		1A69A36B1ED586B80073B0ED /* ShoppingListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListDataSource.swift; path = ../ShoppingListDataSource.swift; sourceTree = "<group>"; };
+		1A69A36D1ED5874A0073B0ED /* ItemsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		1A69A3501ED570570073B0ED /* Groceries */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3511ED570570073B0ED /* AppDelegate.swift */,
-				1A69A3531ED570570073B0ED /* ViewController.swift */,
-				1A69A3551ED570570073B0ED /* Main.storyboard */,
+				1A69A3721ED58AD40073B0ED /* Storyboards */,
+				1A69A3711ED58AB00073B0ED /* Classes */,
 				1A69A3581ED570570073B0ED /* Assets.xcassets */,
 				1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */,
 				1A69A35D1ED570570073B0ED /* Info.plist */,
 			);
 			path = Groceries;
+			sourceTree = "<group>";
+		};
+		1A69A36F1ED58A720073B0ED /* DataSorces */ = {
+			isa = PBXGroup;
+			children = (
+				1A69A36B1ED586B80073B0ED /* ShoppingListDataSource.swift */,
+				1A69A36D1ED5874A0073B0ED /* ItemsDataSource.swift */,
+			);
+			name = DataSorces;
+			sourceTree = "<group>";
+		};
+		1A69A3701ED58A850073B0ED /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				1A69A3651ED5751C0073B0ED /* MainViewPresenter.swift */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		1A69A3711ED58AB00073B0ED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A69A3731ED58B040073B0ED /* Controllers */,
+				1A69A3701ED58A850073B0ED /* Presenters */,
+				1A69A36F1ED58A720073B0ED /* DataSorces */,
+				1A69A3691ED5755C0073B0ED /* GroceriesRouter.swift */,
+				1A69A3511ED570570073B0ED /* AppDelegate.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1A69A3721ED58AD40073B0ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1A69A3551ED570570073B0ED /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		1A69A3731ED58B040073B0ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A69A3631ED574FB0073B0ED /* MainViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A69A3541ED570570073B0ED /* ViewController.swift in Sources */,
+				1A69A36A1ED5755C0073B0ED /* GroceriesRouter.swift in Sources */,
+				1A69A3641ED574FB0073B0ED /* MainViewController.swift in Sources */,
+				1A69A36C1ED586B80073B0ED /* ShoppingListDataSource.swift in Sources */,
+				1A69A36E1ED5874A0073B0ED /* ItemsDataSource.swift in Sources */,
+				1A69A3661ED5751C0073B0ED /* MainViewPresenter.swift in Sources */,
 				1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
