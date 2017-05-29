@@ -23,7 +23,7 @@ class ShoppingListManager: ShoppingListManagerInterface {
     private let dataStore = DataStore()
     
     private func getDataStoreListByName(name: String) -> RealmShoppingList? {
-        guard let dataStoreEntry = dataStore.fetchShoppingLists(predicate: NSPredicate(format: "name == %@", name), sortDescriptors: nil)?.first else {
+        guard let dataStoreEntry: RealmShoppingList = dataStore.fetchEntities(predicate: NSPredicate(format: "name == %@", name), sortDescriptors: nil)?.first else {
             return nil
         }
         return dataStoreEntry
@@ -48,7 +48,7 @@ class ShoppingListManager: ShoppingListManagerInterface {
     }
     
     func getAll() -> [ShoppingList] {
-        guard let dataStoreEntities = dataStore.fetchShoppingLists(predicate: nil, sortDescriptors: nil) else {
+        guard let dataStoreEntities: Results<RealmShoppingList> = dataStore.fetchEntities(predicate: nil, sortDescriptors: nil) else {
             return []
         }
         return listsFromDataStoreEntities(dataStoreEntities)
@@ -72,7 +72,7 @@ class ShoppingListManager: ShoppingListManagerInterface {
     }
     
     func deleteListBy(name: String) {
-        guard let dataStoreEntry = dataStore.fetchShoppingLists(predicate: NSPredicate(format: "name == %@", name), sortDescriptors: nil)?.first else {
+        guard let dataStoreEntry: RealmShoppingList = dataStore.fetchEntities(predicate: NSPredicate(format: "name == %@", name), sortDescriptors: nil)?.first else {
             return
         }
         dataStore.delete(object: dataStoreEntry)

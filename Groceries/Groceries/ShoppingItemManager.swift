@@ -25,7 +25,7 @@ class ShoppingItemManager: ItemsManagerInterface {
     
     private func getDataStoreItem(name: String, listName: String) -> RealmShoppingItem? {
         let searchPredicate = NSPredicate(format: "name == %@ && shoppingListName == %@", name, listName)
-        guard let dataStoreEntry = dataStore.fetchShoppingItems(predicate: searchPredicate, sortDescriptors: nil)?.first else {
+        guard let dataStoreEntry: RealmShoppingItem = dataStore.fetchEntities(predicate: searchPredicate, sortDescriptors: nil)?.first else {
             return nil
         }
         return dataStoreEntry
@@ -57,7 +57,7 @@ class ShoppingItemManager: ItemsManagerInterface {
     
     func getAllItems(in list: ShoppingList) -> [ShoppingItem] {
         let searchPredicate = NSPredicate(format: "shoppingListName == %@", list.name)
-        guard let dataStoreEntries = dataStore.fetchShoppingItems(predicate: searchPredicate, sortDescriptors: nil) else {
+        guard let dataStoreEntries: Results<RealmShoppingItem> = dataStore.fetchEntities(predicate: searchPredicate, sortDescriptors: nil) else {
             return []
         }
         
@@ -65,7 +65,7 @@ class ShoppingItemManager: ItemsManagerInterface {
     }
     
     func getAll() -> [ShoppingItem] {
-        guard let dataStoreEntities = dataStore.fetchShoppingItems(predicate: nil, sortDescriptors: nil) else {
+        guard let dataStoreEntities: Results<RealmShoppingItem> = dataStore.fetchEntities(predicate: nil, sortDescriptors: nil) else {
             return []
         }
         return itemsFromDataStoreEntities(dataStoreEntities)

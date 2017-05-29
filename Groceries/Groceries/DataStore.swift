@@ -20,23 +20,9 @@ class DataStore {
         return nil
     }
     
-    func fetchShoppingItems(predicate: NSPredicate?, sortDescriptors: [SortDescriptor]?) -> Results<RealmShoppingItem>? {
+    func fetchEntities<T : Object>(predicate: NSPredicate?, sortDescriptors: [SortDescriptor]?) -> Results<T>? {
         let realm = getRealm()
-        var items = realm?.objects(RealmShoppingItem.self)
-        
-        if let predicate = predicate {
-            items = items?.filter(predicate)
-        }
-        
-        if let sortDecriptors = sortDescriptors {
-            items = items?.sorted(by: sortDecriptors)
-        }
-        return items
-    }
-    
-    func fetchShoppingLists(predicate: NSPredicate?, sortDescriptors: [SortDescriptor]?) -> Results<RealmShoppingList>? {
-        let realm = getRealm()
-        var items = realm?.objects(RealmShoppingList.self)
+        var items = realm?.objects(T.self)
         
         if let predicate = predicate {
             items = items?.filter(predicate)
@@ -50,12 +36,24 @@ class DataStore {
 
     func delete(object: Object) {
         let realm = getRealm()
-        realm?.delete(object)
+        do {
+            try realm?.write {
+                realm?.delete(object)
+            }
+        } catch let error {
+            print("Something wrong with realm delete object transaction: \(error)")
+        }
     }
     
     func deleteAll() {
         let realm = getRealm()
-        realm?.deleteAll()
+        do {
+            try realm?.write {
+                realm?.deleteAll()
+            }
+        } catch let error {
+            print("Something wrong with realm delete all transaction: \(error)")
+        }
     }
     
     func update(updateBlock: () -> ()) {
@@ -71,6 +69,13 @@ class DataStore {
     
     func add(object: Object) {
         let realm = getRealm()
-        realm?.add(object)
+        do {
+            try realm?.write {
+                realm?.add(object)
+            }
+        } catch let error {
+            print("Something wrong with realm add transaction: \(error)")
+        }
     }
+
 }

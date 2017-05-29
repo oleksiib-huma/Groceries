@@ -19,10 +19,10 @@ protocol ListInteractorOutput: class {
 }
 
 class ListInteractor: ListInteractorInterface {
-    let dataManager: ShoppingListManager
+    let dataManager: ShoppingListManagerInterface
     weak var output: ListInteractorOutput?
     
-    init(dataManager: ShoppingListManager) {
+    init(dataManager: ShoppingListManagerInterface) {
         self.dataManager = dataManager
     }
     

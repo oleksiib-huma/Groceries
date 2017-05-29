@@ -15,7 +15,6 @@ protocol AddListInteractorInterface {
 
 protocol AddListInteractorOutput {
     
-    func saveNewListWith(name: String)
 }
 
 class AddListInteractor: AddListInteractorInterface {
