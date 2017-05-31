@@ -11,7 +11,9 @@ import RealmSwift
 
 class RealmShoppingItem: Object {
     dynamic var name: String = ""
-    dynamic var image: NSData? = nil
     dynamic var quantity: Int = 0
-    dynamic var shoppingListName: String = ""
+    dynamic var shoppingList: RealmShoppingList? = nil
+    dynamic var categoryName: String = ""
+    dynamic var note: String = ""
+    dynamic var isBought: Bool = false
 }
