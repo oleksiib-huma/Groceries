@@ -13,7 +13,10 @@
 		1A69A35C1ED570570073B0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 		1A69A3661ED5751C0073B0ED /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3651ED5751C0073B0ED /* ListPresenter.swift */; };
@@ -47,6 +50,9 @@
 		1A999D511EDEE242004A4665 /* ListItemsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */; };
 		1A999D531EDEF576004A4665 /* DataManagersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
+=======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
@@ -63,7 +69,10 @@
 		1A69A35D1ED570570073B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 		1A69A3651ED5751C0073B0ED /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
@@ -97,6 +106,9 @@
 		1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsModuleProtocols.swift; sourceTree = "<group>"; };
 		1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagersInterfaces.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
+=======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
@@ -139,6 +151,10 @@
 			children = (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				1A69A3711ED58AB00073B0ED /* Classes */,
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 				1A69A3711ED58AB00073B0ED /* Classes */,
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
@@ -186,7 +202,10 @@
 		};
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 		1A69A3741ED5D5260073B0ED /* DataModel */ = {
@@ -572,7 +591,10 @@
 			files = (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 				1A999D241EDDBCD1004A4665 /* AddItemPresenter.swift in Sources */,
@@ -607,6 +629,9 @@
 				1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */,
 				1A999D4D1EDED5A8004A4665 /* AddListModuleProtocols.swift in Sources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
+=======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
