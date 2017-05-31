@@ -9,15 +9,6 @@
 import UIKit
 import RealmSwift
 
-protocol ShoppingListManagerInterface {
-    func getListBy(name: String) -> ShoppingList?
-    func getAll() -> [ShoppingList]
-    func add(list: ShoppingList)
-    func set(name: String, for list: ShoppingList)
-    func deleteListBy(name: String)
-    func deleteAll()
-}
-
 class ShoppingListManager: ShoppingListManagerInterface {
     
     private let dataStore = DataStore()
@@ -30,12 +21,18 @@ class ShoppingListManager: ShoppingListManagerInterface {
     }
     
     private func listFromDataStoreEntity(_ entity: RealmShoppingList) -> ShoppingList {
-        return ShoppingList(name: entity.name, created: entity.created)
+        return ShoppingList(name: entity.name,
+                            created: entity.created,
+                            itemsCount: entity.items.count,
+                            boughtItemsCount: entity.boughtItemsCount)
     }
     
     private func listsFromDataStoreEntities(_ entities: Results<RealmShoppingList>) -> [ShoppingList] {
         return entities.map({ (realmShoppingList) -> ShoppingList in
-            return ShoppingList(name: realmShoppingList.name, created: realmShoppingList.created)
+            return ShoppingList(name: realmShoppingList.name,
+                                created: realmShoppingList.created,
+                                itemsCount: realmShoppingList.items.count,
+                                boughtItemsCount: realmShoppingList.boughtItemsCount)
         })
     }
 
@@ -63,10 +60,21 @@ class ShoppingListManager: ShoppingListManagerInterface {
         }
     }
     
+    func set(boughtItemsCount: Int, for list: ShoppingList) {
+        guard let dataStoreList = getDataStoreListByName(name: list.name) else {
+            return
+        }
+        dataStore.update {
+            dataStoreList.boughtItemsCount = boughtItemsCount
+        }
+    }
+    
     func add(list: ShoppingList) {
         let dataStoteShoppingList = RealmShoppingList()
+        
         dataStoteShoppingList.name = list.name
         dataStoteShoppingList.created = list.created
+        dataStoteShoppingList.boughtItemsCount = list.boughtItemsCount
         
         dataStore.add(object: dataStoteShoppingList)
     }

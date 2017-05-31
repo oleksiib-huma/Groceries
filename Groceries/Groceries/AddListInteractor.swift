@@ -8,24 +8,24 @@
 
 import UIKit
 
-protocol AddListInteractorInterface {
-    
-    func saveNewListWith(name: String)
-}
-
-protocol AddListInteractorOutput {
-    
-}
-
 class AddListInteractor: AddListInteractorInterface {
     
-    let dataManager: ShoppingListManager
+    // MARK: - Properties
+    private let dataManager: ShoppingListManagerInterface
+    weak var output: AddListInteractorOutput?
     
-    init(dataManager: ShoppingListManager) {
+    // MARK: - Init
+    init(dataManager: ShoppingListManagerInterface) {
         self.dataManager = dataManager
     }
     
+    // MARK: - AddListInteractorInterface
     func saveNewListWith(name: String) {
-        dataManager.add(list: ShoppingList(name: name, created: NSDate()))
+        if dataManager.getListBy(name: name) == nil {
+            dataManager.add(list: ShoppingList(name: name, created: NSDate(), itemsCount: 0, boughtItemsCount: 0))
+            output?.nameSuccessfullySaved()
+        } else {
+            output?.nameAlreadyExist()
+        }
     }
 }

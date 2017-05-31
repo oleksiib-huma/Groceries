@@ -8,22 +8,28 @@
 
 import UIKit
 
-class AddListPresenter {
+class AddListPresenter: AddNewViewEventHandlerInterface, AddListInteractorOutput {
     
-    weak var addListView: AddListViewInterface?
+    // MARK - Properties
+    weak var addListView: AddNewViewInterface?
     var addListInteractor: AddListInteractorInterface?
     var addListWireframe: AddListWireframeInterface?
-}
-
-extension AddListPresenter: AddListViewEventHandlerInterface {
     
+    // MARK: - AddListViewEventHandlerInterface
     func cancelAddAction() {
         addListWireframe?.dismissAddModule()
     }
     
     func saveAddActionWithName(name: String) {
         addListInteractor?.saveNewListWith(name: name)
-        addListWireframe?.dismissAddModule()
     }
     
+    // MARK: - AddListInteractorOutput
+    func nameAlreadyExist() {
+         addListView?.showNameAlreadyExistMassage()
+    }
+    
+    func nameSuccessfullySaved() {
+        addListWireframe?.dismissAddModule()
+    }
 }
