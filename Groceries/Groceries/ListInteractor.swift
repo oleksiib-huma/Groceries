@@ -8,21 +8,28 @@
 
 import UIKit
 
-class ListInteractor: ListInteractorInterface {
+protocol ListInteractorInterface {
     
-    // MARK: - Properies
-    private let dataManager: ShoppingListManagerInterface
+    func findShoppingLists()
+}
+
+protocol ListInteractorOutput: class {
+    
+    func foundShoppingLists(lists: [ShoppingList])
+}
+
+class ListInteractor: ListInteractorInterface {
+    let dataManager: ShoppingListManagerInterface
     weak var output: ListInteractorOutput?
     
-    // MARK: - Init
     init(dataManager: ShoppingListManagerInterface) {
         self.dataManager = dataManager
     }
     
-    // MARK: - ListInteractorInterface
     func findShoppingLists() {
         let shoppingLists = dataManager.getAll()
         output?.foundShoppingLists(lists: shoppingLists)
+        
     }
 }
 

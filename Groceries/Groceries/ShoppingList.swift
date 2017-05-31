@@ -10,14 +10,10 @@ import UIKit
 
 struct ShoppingList {
     var name: String
-    var itemsCount: Int
-    var boughtItemsCount: Int
     var created: NSDate
     
-    init(name: String, created: NSDate, itemsCount: Int, boughtItemsCount: Int) {
+    init(name: String, created: NSDate) {
         self.name = name
         self.created = created
-        self.itemsCount = itemsCount
-        self.boughtItemsCount = boughtItemsCount
     }
 }

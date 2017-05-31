@@ -8,17 +8,31 @@
 
 import UIKit
 
+protocol ListWireframeInterface {
+    func presentShoppingListModule(from window: UIWindow)
+    func presentAddListScreen()
+}
+
 class ShoppingListWireframe: ListWireframeInterface {
     
-    // MARK: - Properies
-    private let kListControllerIdentifier = "listControllerIdentifier"
-    private weak var presentedView: UIViewController?
+    var presentedView: UIViewController?
+    let listControllerIdentifier = "listControllerIdentifier"
     
-    // MARK: - Internal functions
-    private func configureDependencies() {
+    func presentShoppingListModule(from window: UIWindow) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        presentedView = storyboard.instantiateViewController(withIdentifier: listControllerIdentifier)
+        configureDependencies()
+        window.rootViewController = presentedView
+    }
+    
+    func configureDependencies() {
         let presenter = ListPresenter()
         let dataManager = ShoppingListManager()
         let interactor = ListInteractor(dataManager: dataManager)
+        
+        if let presentedView = presentedView as? ShoppingListController {
+            presentedView.eventHandler = presenter
+        }
         
         if let presentedView = presentedView as? ShoppingListViewInterface {
             presenter.listView = presentedView
@@ -26,31 +40,13 @@ class ShoppingListWireframe: ListWireframeInterface {
         presenter.listInteractor = interactor
         presenter.listWireframe = self
         
-        if let presentedView = presentedView as? ShoppingListController {
-            presentedView.eventHandler = presenter
-        }
         interactor.output = presenter
-    }
-    
-    // MARK: - ListWireframeInterface
-    func presentShoppingListModule(from window: UIWindow) {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        presentedView = storyboard.instantiateViewController(withIdentifier: kListControllerIdentifier)
-        configureDependencies()
-        window.rootViewController = presentedView
     }
     
     func presentAddListScreen() {
         let addListWireframe = AddListWireframe()
         if let presentedView = presentedView {
             addListWireframe.presentAddListModule(from: presentedView)
-        }
-    }
-    
-    func presentItemsScreen(for list: ShoppingList) {
-        let itemsWireframe = ShoppingItemWireframe()
-        if let presentedView = presentedView {
-            itemsWireframe.presentItemsModule(from: presentedView, for: list)
         }
     }
 }

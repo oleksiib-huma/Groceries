@@ -12,11 +12,8 @@ import RealmSwift
 class RealmShoppingList: Object {
     dynamic var name: String = ""
     dynamic var created: NSDate = NSDate()
-    dynamic var boughtItemsCount: Int = 0
-    let items = LinkingObjects(fromType: RealmShoppingItem.self, property: "shoppingList")
     
     override static func primaryKey() -> String {
         return "name"
     }
-
 }

@@ -10,18 +10,14 @@ import UIKit
 
 struct ShoppingItem {
     var name: String
+    var image: UIImage?
     var quantity: Int
-    var isBought: Bool
-    var note: String
-    var categoryName: String
-    var listName: String
+    let shoppingListName: String
 
-    init(name: String, quantity: Int, note: String, isBought: Bool, categoryName: String, listName: String) {
+    init(name: String, image: UIImage?, quantity: Int, shoppingListName: String) {
         self.name = name
+        self.image = image
         self.quantity = quantity
-        self.note = note
-        self.isBought = isBought
-        self.categoryName = categoryName
-        self.listName = listName
+        self.shoppingListName = shoppingListName
     }
 }

@@ -9,12 +9,22 @@
 import UIKit
 import RealmSwift
 
+protocol ItemsManagerInterface {
+    
+    func getItem(name: String, in list: ShoppingList) -> ShoppingItem?
+    func getAllItems(in list: ShoppingList) -> [ShoppingItem]
+    func getAll() -> [ShoppingItem]
+    func add(item: ShoppingItem)
+    func set(quantity: Int, for item: ShoppingItem)
+    func set(name: String, for item: ShoppingItem)
+}
+
 class ShoppingItemManager: ItemsManagerInterface {
     
     private let dataStore = DataStore()
     
     private func getDataStoreItem(name: String, listName: String) -> RealmShoppingItem? {
-        let searchPredicate = NSPredicate(format: "name == %@ && shoppingList.name == %@", name, listName)
+        let searchPredicate = NSPredicate(format: "name == %@ && shoppingListName == %@", name, listName)
         guard let dataStoreEntry: RealmShoppingItem = dataStore.fetchEntities(predicate: searchPredicate, sortDescriptors: nil)?.first else {
             return nil
         }
@@ -23,21 +33,17 @@ class ShoppingItemManager: ItemsManagerInterface {
     
     private func itemFromDataStoreEntity(_ entity: RealmShoppingItem) -> ShoppingItem {
         return ShoppingItem(name: entity.name,
+                            image: UIImage(data: (entity.image as Data?) ?? Data()),
                             quantity: entity.quantity,
-                            note: entity.note,
-                            isBought: entity.isBought,
-                            categoryName: entity.categoryName,
-                            listName: entity.shoppingList?.name ?? "")
+                            shoppingListName: entity.shoppingListName)
     }
     
     private func itemsFromDataStoreEntities(_ entities: Results<RealmShoppingItem>) -> [ShoppingItem] {
         return entities.map({ (realmShoppingItem) -> ShoppingItem in
             return ShoppingItem(name: realmShoppingItem.name,
+                                image: UIImage(data: (realmShoppingItem.image as Data?) ?? Data()),
                                 quantity: realmShoppingItem.quantity,
-                                note: realmShoppingItem.note,
-                                isBought: realmShoppingItem.isBought,
-                                categoryName: realmShoppingItem.categoryName,
-                                listName: realmShoppingItem.shoppingList?.name ?? "")
+                                shoppingListName: realmShoppingItem.shoppingListName)
         })
     }
 
@@ -50,7 +56,7 @@ class ShoppingItemManager: ItemsManagerInterface {
     }
     
     func getAllItems(in list: ShoppingList) -> [ShoppingItem] {
-        let searchPredicate = NSPredicate(format: "shoppingList.name == %@", list.name)
+        let searchPredicate = NSPredicate(format: "shoppingListName == %@", list.name)
         guard let dataStoreEntries: Results<RealmShoppingItem> = dataStore.fetchEntities(predicate: searchPredicate, sortDescriptors: nil) else {
             return []
         }
@@ -69,18 +75,17 @@ class ShoppingItemManager: ItemsManagerInterface {
         let dataStoteShoppingItem = RealmShoppingItem()
         dataStoteShoppingItem.name = item.name
         dataStoteShoppingItem.quantity = item.quantity
-        dataStoteShoppingItem.note = item.note
-        dataStoteShoppingItem.categoryName = item.categoryName
-        dataStoteShoppingItem.isBought = item.isBought
+        dataStoteShoppingItem.shoppingListName = item.shoppingListName
         
-        let realmList: RealmShoppingList? = dataStore.fetchEntities(predicate: NSPredicate(format: "name == %@", item.listName), sortDescriptors: nil)?.first
-        dataStoteShoppingItem.shoppingList = realmList
+        if let image = item.image {
+            dataStoteShoppingItem.image = NSData(data: UIImagePNGRepresentation(image) ?? Data())
+        }
         
         dataStore.add(object: dataStoteShoppingItem)
     }
     
     func set(quantity: Int, for item: ShoppingItem) {
-        guard let dataStoreItem = getDataStoreItem(name: item.name, listName: item.listName) else {
+        guard let dataStoreItem = getDataStoreItem(name: item.name, listName: item.shoppingListName) else {
             return
         }
         dataStore.update {
@@ -89,7 +94,7 @@ class ShoppingItemManager: ItemsManagerInterface {
     }
     
     func set(name: String, for item: ShoppingItem) {
-        guard let dataStoreItem = getDataStoreItem(name: item.name, listName: item.listName) else {
+        guard let dataStoreItem = getDataStoreItem(name: item.name, listName: item.shoppingListName) else {
             return
         }
         dataStore.update {
