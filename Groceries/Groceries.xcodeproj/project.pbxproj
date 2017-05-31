@@ -7,81 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3511ED570570073B0ED /* AppDelegate.swift */; };
-		1A69A3571ED570570073B0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3551ED570570073B0ED /* Main.storyboard */; };
 		1A69A3591ED570570073B0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3581ED570570073B0ED /* Assets.xcassets */; };
 		1A69A35C1ED570570073B0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */; };
-		1A69A3661ED5751C0073B0ED /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3651ED5751C0073B0ED /* ListPresenter.swift */; };
-		1A69A36C1ED586B80073B0ED /* ShoppingListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */; };
-		1A69A36E1ED5874A0073B0ED /* ShoppingItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */; };
-		1A69A3761ED5D56B0073B0ED /* RealmShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3751ED5D56B0073B0ED /* RealmShoppingItem.swift */; };
-		1A999CF91ED5E0DD004A4665 /* RealmShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999CF81ED5E0DD004A4665 /* RealmShoppingList.swift */; };
-		1A999CFC1ED6D126004A4665 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999CFB1ED6D126004A4665 /* ShoppingItem.swift */; };
-		1A999CFE1ED6D134004A4665 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999CFD1ED6D134004A4665 /* ShoppingList.swift */; };
-		1A999D011ED70912004A4665 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D001ED70912004A4665 /* DataStore.swift */; };
-		1A999D041ED8729E004A4665 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D031ED8729E004A4665 /* ListInteractor.swift */; };
-		1A999D061ED885CB004A4665 /* AddListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D051ED885CB004A4665 /* AddListInteractor.swift */; };
-		1A999D0F1EDC30F1004A4665 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D0E1EDC30F1004A4665 /* RootWireframe.swift */; };
-		1A999D111EDC355D004A4665 /* ShoppingListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D101EDC355D004A4665 /* ShoppingListWireframe.swift */; };
-		1A999D141EDC38F2004A4665 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D131EDC38F2004A4665 /* ShoppingListController.swift */; };
-		1A999D181EDC5A28004A4665 /* AddListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D171EDC5A28004A4665 /* AddListWireframe.swift */; };
-		1A999D1A1EDC7B4D004A4665 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D191EDC7B4D004A4665 /* AddListPresenter.swift */; };
-		1A999D1C1EDC7B79004A4665 /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D1B1EDC7B79004A4665 /* AddNewController.swift */; };
-		1A999D1E1EDD7311004A4665 /* RealmItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D1D1EDD7311004A4665 /* RealmItemCategory.swift */; };
-		1A999D201EDD8A50004A4665 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D1F1EDD8A50004A4665 /* ItemCategory.swift */; };
-		1A999D221EDDBB71004A4665 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D211EDDBB71004A4665 /* AddItemInteractor.swift */; };
-		1A999D241EDDBCD1004A4665 /* AddItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D231EDDBCD1004A4665 /* AddItemPresenter.swift */; };
-		1A999D281EDDBDC1004A4665 /* AddItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D271EDDBDC1004A4665 /* AddItemWireframe.swift */; };
-		1A999D2A1EDDC030004A4665 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D291EDDC030004A4665 /* ItemsInteractor.swift */; };
-		1A999D2C1EDDC1FF004A4665 /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D2B1EDDC1FF004A4665 /* ItemsPresenter.swift */; };
-		1A999D2E1EDDC2FF004A4665 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D2D1EDDC2FF004A4665 /* ItemsController.swift */; };
-		1A999D301EDDC4F2004A4665 /* ShoppingItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D2F1EDDC4F2004A4665 /* ShoppingItemWireframe.swift */; };
-		1A999D4B1EDECB35004A4665 /* ListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4A1EDECB35004A4665 /* ListModuleProtocols.swift */; };
-		1A999D4D1EDED5A8004A4665 /* AddListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4C1EDED5A8004A4665 /* AddListModuleProtocols.swift */; };
-		1A999D4F1EDEDEF6004A4665 /* AddItemModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */; };
-		1A999D511EDEE242004A4665 /* ListItemsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */; };
-		1A999D531EDEF576004A4665 /* DataManagersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */; };
+		1A99A06E1EDF16C3004A4665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0331EDF16C3004A4665 /* AppDelegate.swift */; };
+		1A99A06F1EDF16C3004A4665 /* DataManagersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0351EDF16C3004A4665 /* DataManagersInterfaces.swift */; };
+		1A99A0701EDF16C3004A4665 /* ShoppingItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0361EDF16C3004A4665 /* ShoppingItemManager.swift */; };
+		1A99A0711EDF16C3004A4665 /* ShoppingListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0371EDF16C3004A4665 /* ShoppingListManager.swift */; };
+		1A99A0721EDF16C3004A4665 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0391EDF16C3004A4665 /* DataStore.swift */; };
+		1A99A0731EDF16C3004A4665 /* RealmItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A03A1EDF16C3004A4665 /* RealmItemCategory.swift */; };
+		1A99A0741EDF16C3004A4665 /* RealmShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A03B1EDF16C3004A4665 /* RealmShoppingItem.swift */; };
+		1A99A0751EDF16C3004A4665 /* RealmShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A03C1EDF16C3004A4665 /* RealmShoppingList.swift */; };
+		1A99A0761EDF16C3004A4665 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A03E1EDF16C3004A4665 /* ItemCategory.swift */; };
+		1A99A0771EDF16C3004A4665 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A03F1EDF16C3004A4665 /* ShoppingItem.swift */; };
+		1A99A0781EDF16C3004A4665 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0401EDF16C3004A4665 /* ShoppingList.swift */; };
+		1A99A0791EDF16C3004A4665 /* AddItemModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0441EDF16C3004A4665 /* AddItemModuleProtocols.swift */; };
+		1A99A07A1EDF16C3004A4665 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0461EDF16C3004A4665 /* AddItemInteractor.swift */; };
+		1A99A07B1EDF16C3004A4665 /* AddItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0481EDF16C3004A4665 /* AddItemPresenter.swift */; };
+		1A99A07C1EDF16C3004A4665 /* AddItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A04B1EDF16C3004A4665 /* AddItemWireframe.swift */; };
+		1A99A07D1EDF16C3004A4665 /* AddListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A04E1EDF16C3004A4665 /* AddListModuleProtocols.swift */; };
+		1A99A07E1EDF16C3004A4665 /* AddListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0501EDF16C3004A4665 /* AddListInteractor.swift */; };
+		1A99A07F1EDF16C3004A4665 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0521EDF16C3004A4665 /* AddListPresenter.swift */; };
+		1A99A0801EDF16C3004A4665 /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0541EDF16C3004A4665 /* AddNewController.swift */; };
+		1A99A0811EDF16C3004A4665 /* AddListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0561EDF16C3004A4665 /* AddListWireframe.swift */; };
+		1A99A0821EDF16C3004A4665 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0591EDF16C3004A4665 /* ItemsInteractor.swift */; };
+		1A99A0831EDF16C3004A4665 /* ListItemsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A05B1EDF16C3004A4665 /* ListItemsModuleProtocols.swift */; };
+		1A99A0841EDF16C3004A4665 /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A05D1EDF16C3004A4665 /* ItemsPresenter.swift */; };
+		1A99A0851EDF16C3004A4665 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A05F1EDF16C3004A4665 /* ItemsController.swift */; };
+		1A99A0861EDF16C3004A4665 /* ShoppingItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0611EDF16C3004A4665 /* ShoppingItemWireframe.swift */; };
+		1A99A0871EDF16C3004A4665 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0641EDF16C3004A4665 /* ListInteractor.swift */; };
+		1A99A0881EDF16C3004A4665 /* ListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0661EDF16C3004A4665 /* ListModuleProtocols.swift */; };
+		1A99A0891EDF16C3004A4665 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A0681EDF16C3004A4665 /* ListPresenter.swift */; };
+		1A99A08A1EDF16C3004A4665 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A06A1EDF16C3004A4665 /* ShoppingListController.swift */; };
+		1A99A08B1EDF16C3004A4665 /* ShoppingListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A06C1EDF16C3004A4665 /* ShoppingListWireframe.swift */; };
+		1A99A08C1EDF16C3004A4665 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99A06D1EDF16C3004A4665 /* RootWireframe.swift */; };
+		1A99A08E1EDF16D4004A4665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A99A08D1EDF16D4004A4665 /* Main.storyboard */; };
 		BCE092FE698B984BAB31C8FF /* Pods_Groceries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7844241E75C4F4458594C32 /* Pods_Groceries.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1336E36C3EAA3F3238E8585B /* Pods-Groceries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groceries.release.xcconfig"; path = "Pods/Target Support Files/Pods-Groceries/Pods-Groceries.release.xcconfig"; sourceTree = "<group>"; };
 		1A69A34E1ED570570073B0ED /* Groceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A69A3511ED570570073B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A69A3561ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A69A3581ED570570073B0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A69A35B1ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A69A35D1ED570570073B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A69A3651ED5751C0073B0ED /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListManager.swift; path = ../ShoppingListManager.swift; sourceTree = "<group>"; };
-		1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemManager.swift; sourceTree = "<group>"; };
-		1A69A3751ED5D56B0073B0ED /* RealmShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingItem.swift; sourceTree = "<group>"; };
-		1A999CF81ED5E0DD004A4665 /* RealmShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingList.swift; sourceTree = "<group>"; };
-		1A999CFB1ED6D126004A4665 /* ShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
-		1A999CFD1ED6D134004A4665 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
-		1A999D001ED70912004A4665 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		1A999D031ED8729E004A4665 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
-		1A999D051ED885CB004A4665 /* AddListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListInteractor.swift; sourceTree = "<group>"; };
-		1A999D0E1EDC30F1004A4665 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
-		1A999D101EDC355D004A4665 /* ShoppingListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListWireframe.swift; sourceTree = "<group>"; };
-		1A999D131EDC38F2004A4665 /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
-		1A999D171EDC5A28004A4665 /* AddListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListWireframe.swift; sourceTree = "<group>"; };
-		1A999D191EDC7B4D004A4665 /* AddListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
-		1A999D1B1EDC7B79004A4665 /* AddNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewController.swift; sourceTree = "<group>"; };
-		1A999D1D1EDD7311004A4665 /* RealmItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmItemCategory.swift; sourceTree = "<group>"; };
-		1A999D1F1EDD8A50004A4665 /* ItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
-		1A999D211EDDBB71004A4665 /* AddItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
-		1A999D231EDDBCD1004A4665 /* AddItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemPresenter.swift; sourceTree = "<group>"; };
-		1A999D271EDDBDC1004A4665 /* AddItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemWireframe.swift; sourceTree = "<group>"; };
-		1A999D291EDDC030004A4665 /* ItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
-		1A999D2B1EDDC1FF004A4665 /* ItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
-		1A999D2D1EDDC2FF004A4665 /* ItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
-		1A999D2F1EDDC4F2004A4665 /* ShoppingItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemWireframe.swift; sourceTree = "<group>"; };
-		1A999D4A1EDECB35004A4665 /* ListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D4C1EDED5A8004A4665 /* AddListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagersInterfaces.swift; sourceTree = "<group>"; };
+		1A99A0331EDF16C3004A4665 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A99A0351EDF16C3004A4665 /* DataManagersInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagersInterfaces.swift; sourceTree = "<group>"; };
+		1A99A0361EDF16C3004A4665 /* ShoppingItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemManager.swift; sourceTree = "<group>"; };
+		1A99A0371EDF16C3004A4665 /* ShoppingListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListManager.swift; sourceTree = "<group>"; };
+		1A99A0391EDF16C3004A4665 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		1A99A03A1EDF16C3004A4665 /* RealmItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmItemCategory.swift; sourceTree = "<group>"; };
+		1A99A03B1EDF16C3004A4665 /* RealmShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingItem.swift; sourceTree = "<group>"; };
+		1A99A03C1EDF16C3004A4665 /* RealmShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingList.swift; sourceTree = "<group>"; };
+		1A99A03E1EDF16C3004A4665 /* ItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
+		1A99A03F1EDF16C3004A4665 /* ShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		1A99A0401EDF16C3004A4665 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		1A99A0441EDF16C3004A4665 /* AddItemModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemModuleProtocols.swift; sourceTree = "<group>"; };
+		1A99A0461EDF16C3004A4665 /* AddItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
+		1A99A0481EDF16C3004A4665 /* AddItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemPresenter.swift; sourceTree = "<group>"; };
+		1A99A04B1EDF16C3004A4665 /* AddItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemWireframe.swift; sourceTree = "<group>"; };
+		1A99A04E1EDF16C3004A4665 /* AddListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListModuleProtocols.swift; sourceTree = "<group>"; };
+		1A99A0501EDF16C3004A4665 /* AddListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListInteractor.swift; sourceTree = "<group>"; };
+		1A99A0521EDF16C3004A4665 /* AddListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
+		1A99A0541EDF16C3004A4665 /* AddNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewController.swift; sourceTree = "<group>"; };
+		1A99A0561EDF16C3004A4665 /* AddListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListWireframe.swift; sourceTree = "<group>"; };
+		1A99A0591EDF16C3004A4665 /* ItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
+		1A99A05B1EDF16C3004A4665 /* ListItemsModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsModuleProtocols.swift; sourceTree = "<group>"; };
+		1A99A05D1EDF16C3004A4665 /* ItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
+		1A99A05F1EDF16C3004A4665 /* ItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
+		1A99A0611EDF16C3004A4665 /* ShoppingItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemWireframe.swift; sourceTree = "<group>"; };
+		1A99A0641EDF16C3004A4665 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		1A99A0661EDF16C3004A4665 /* ListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleProtocols.swift; sourceTree = "<group>"; };
+		1A99A0681EDF16C3004A4665 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		1A99A06A1EDF16C3004A4665 /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
+		1A99A06C1EDF16C3004A4665 /* ShoppingListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListWireframe.swift; sourceTree = "<group>"; };
+		1A99A06D1EDF16C3004A4665 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		1A99A08D1EDF16D4004A4665 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A7844241E75C4F4458594C32 /* Pods_Groceries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Groceries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85EB86A5DE82E75336281EB /* Pods-Groceries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groceries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Groceries/Pods-Groceries.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,283 +119,275 @@
 		1A69A3501ED570570073B0ED /* Groceries */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3711ED58AB00073B0ED /* Classes */,
-				1A69A3721ED58AD40073B0ED /* Storyboards */,
+				1A99A0321EDF16C3004A4665 /* Classes */,
 				1A69A3581ED570570073B0ED /* Assets.xcassets */,
+				1A99A08D1EDF16D4004A4665 /* Main.storyboard */,
 				1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */,
 				1A69A35D1ED570570073B0ED /* Info.plist */,
 			);
 			path = Groceries;
 			sourceTree = "<group>";
 		};
-		1A69A36F1ED58A720073B0ED /* DataManagers */ = {
+		1A99A0321EDF16C3004A4665 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */,
-				1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */,
-				1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */,
+				1A99A0331EDF16C3004A4665 /* AppDelegate.swift */,
+				1A99A0341EDF16C3004A4665 /* DataManagers */,
+				1A99A0381EDF16C3004A4665 /* DataModel */,
+				1A99A03D1EDF16C3004A4665 /* Entities */,
+				1A99A0411EDF16C3004A4665 /* Modules */,
+				1A99A06D1EDF16C3004A4665 /* RootWireframe.swift */,
 			);
-			name = DataManagers;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		1A69A3711ED58AB00073B0ED /* Classes */ = {
+		1A99A0341EDF16C3004A4665 /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D311EDEC444004A4665 /* Modules */,
-				1A69A3741ED5D5260073B0ED /* DataModel */,
-				1A999CFA1ED6D0DE004A4665 /* Entities */,
-				1A69A36F1ED58A720073B0ED /* DataManagers */,
-				1A69A3511ED570570073B0ED /* AppDelegate.swift */,
-				1A999D0E1EDC30F1004A4665 /* RootWireframe.swift */,
+				1A99A0351EDF16C3004A4665 /* DataManagersInterfaces.swift */,
+				1A99A0361EDF16C3004A4665 /* ShoppingItemManager.swift */,
+				1A99A0371EDF16C3004A4665 /* ShoppingListManager.swift */,
 			);
-			name = Classes;
+			path = DataManagers;
 			sourceTree = "<group>";
 		};
-		1A69A3721ED58AD40073B0ED /* Storyboards */ = {
+		1A99A0381EDF16C3004A4665 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3551ED570570073B0ED /* Main.storyboard */,
+				1A99A0391EDF16C3004A4665 /* DataStore.swift */,
+				1A99A03A1EDF16C3004A4665 /* RealmItemCategory.swift */,
+				1A99A03B1EDF16C3004A4665 /* RealmShoppingItem.swift */,
+				1A99A03C1EDF16C3004A4665 /* RealmShoppingList.swift */,
 			);
-			name = Storyboards;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
-		1A69A3741ED5D5260073B0ED /* DataModel */ = {
+		1A99A03D1EDF16C3004A4665 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3751ED5D56B0073B0ED /* RealmShoppingItem.swift */,
-				1A999CF81ED5E0DD004A4665 /* RealmShoppingList.swift */,
-				1A999D1D1EDD7311004A4665 /* RealmItemCategory.swift */,
-				1A999D001ED70912004A4665 /* DataStore.swift */,
+				1A99A03E1EDF16C3004A4665 /* ItemCategory.swift */,
+				1A99A03F1EDF16C3004A4665 /* ShoppingItem.swift */,
+				1A99A0401EDF16C3004A4665 /* ShoppingList.swift */,
 			);
-			name = DataModel;
+			path = Entities;
 			sourceTree = "<group>";
 		};
-		1A999CFA1ED6D0DE004A4665 /* Entities */ = {
+		1A99A0411EDF16C3004A4665 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1A999CFB1ED6D126004A4665 /* ShoppingItem.swift */,
-				1A999D1F1EDD8A50004A4665 /* ItemCategory.swift */,
-				1A999CFD1ED6D134004A4665 /* ShoppingList.swift */,
+				1A99A0421EDF16C3004A4665 /* AddListItem */,
+				1A99A04C1EDF16C3004A4665 /* AddShoppingList */,
+				1A99A0571EDF16C3004A4665 /* ListItems */,
+				1A99A0621EDF16C3004A4665 /* ShoppingList */,
 			);
-			name = Entities;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		1A999D311EDEC444004A4665 /* Modules */ = {
+		1A99A0421EDF16C3004A4665 /* AddListItem */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D321EDEC45B004A4665 /* ShoppingList */,
-				1A999D331EDEC473004A4665 /* AddShoppingList */,
-				1A999D351EDEC4BE004A4665 /* AddListItem */,
-				1A999D341EDEC48D004A4665 /* ListItems */,
+				1A99A0431EDF16C3004A4665 /* AddItemInterfaces */,
+				1A99A0451EDF16C3004A4665 /* Interactor */,
+				1A99A0471EDF16C3004A4665 /* Presenter */,
+				1A99A0491EDF16C3004A4665 /* View */,
+				1A99A04A1EDF16C3004A4665 /* Wireframe */,
 			);
-			name = Modules;
+			path = AddListItem;
 			sourceTree = "<group>";
 		};
-		1A999D321EDEC45B004A4665 /* ShoppingList */ = {
+		1A99A0431EDF16C3004A4665 /* AddItemInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D361EDEC5A1004A4665 /* Interactor */,
-				1A999D371EDEC5C8004A4665 /* Presenter */,
-				1A999D3A1EDEC5DF004A4665 /* Interfaces */,
-				1A999D381EDEC5CF004A4665 /* View */,
-				1A999D391EDEC5D7004A4665 /* Wireframe */,
+				1A99A0441EDF16C3004A4665 /* AddItemModuleProtocols.swift */,
 			);
-			name = ShoppingList;
+			path = AddItemInterfaces;
 			sourceTree = "<group>";
 		};
-		1A999D331EDEC473004A4665 /* AddShoppingList */ = {
+		1A99A0451EDF16C3004A4665 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D3F1EDEC659004A4665 /* Intreactor */,
-				1A999D3E1EDEC653004A4665 /* Presenter */,
-				1A999D3D1EDEC64C004A4665 /* Interfaces */,
-				1A999D3C1EDEC646004A4665 /* View */,
-				1A999D3B1EDEC63E004A4665 /* Wireframe */,
+				1A99A0461EDF16C3004A4665 /* AddItemInteractor.swift */,
 			);
-			name = AddShoppingList;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
-		1A999D341EDEC48D004A4665 /* ListItems */ = {
+		1A99A0471EDF16C3004A4665 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D491EDEC6EF004A4665 /* Interactor */,
-				1A999D481EDEC6E8004A4665 /* Presenter */,
-				1A999D471EDEC6E2004A4665 /* Interfaces */,
-				1A999D461EDEC6D9004A4665 /* View */,
-				1A999D451EDEC6CC004A4665 /* Wireframe */,
+				1A99A0481EDF16C3004A4665 /* AddItemPresenter.swift */,
 			);
-			name = ListItems;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		1A999D351EDEC4BE004A4665 /* AddListItem */ = {
+		1A99A0491EDF16C3004A4665 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D441EDEC6A9004A4665 /* Interactor */,
-				1A999D431EDEC6A1004A4665 /* Presenter */,
-				1A999D421EDEC69A004A4665 /* Interfaces */,
-				1A999D411EDEC693004A4665 /* View */,
-				1A999D401EDEC68A004A4665 /* Wireframe */,
 			);
-			name = AddListItem;
+			path = View;
 			sourceTree = "<group>";
 		};
-		1A999D361EDEC5A1004A4665 /* Interactor */ = {
+		1A99A04A1EDF16C3004A4665 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D031ED8729E004A4665 /* ListInteractor.swift */,
+				1A99A04B1EDF16C3004A4665 /* AddItemWireframe.swift */,
 			);
-			name = Interactor;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
-		1A999D371EDEC5C8004A4665 /* Presenter */ = {
+		1A99A04C1EDF16C3004A4665 /* AddShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3651ED5751C0073B0ED /* ListPresenter.swift */,
+				1A99A04D1EDF16C3004A4665 /* AddListModuleInterfaces */,
+				1A99A04F1EDF16C3004A4665 /* Interactor */,
+				1A99A0511EDF16C3004A4665 /* Presenter */,
+				1A99A0531EDF16C3004A4665 /* View */,
+				1A99A0551EDF16C3004A4665 /* Wireframe */,
 			);
-			name = Presenter;
+			path = AddShoppingList;
 			sourceTree = "<group>";
 		};
-		1A999D381EDEC5CF004A4665 /* View */ = {
+		1A99A04D1EDF16C3004A4665 /* AddListModuleInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D131EDC38F2004A4665 /* ShoppingListController.swift */,
+				1A99A04E1EDF16C3004A4665 /* AddListModuleProtocols.swift */,
 			);
-			name = View;
+			path = AddListModuleInterfaces;
 			sourceTree = "<group>";
 		};
-		1A999D391EDEC5D7004A4665 /* Wireframe */ = {
+		1A99A04F1EDF16C3004A4665 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D101EDC355D004A4665 /* ShoppingListWireframe.swift */,
+				1A99A0501EDF16C3004A4665 /* AddListInteractor.swift */,
 			);
-			name = Wireframe;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
-		1A999D3A1EDEC5DF004A4665 /* Interfaces */ = {
+		1A99A0511EDF16C3004A4665 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D4A1EDECB35004A4665 /* ListModuleProtocols.swift */,
+				1A99A0521EDF16C3004A4665 /* AddListPresenter.swift */,
 			);
-			name = Interfaces;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		1A999D3B1EDEC63E004A4665 /* Wireframe */ = {
+		1A99A0531EDF16C3004A4665 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D171EDC5A28004A4665 /* AddListWireframe.swift */,
+				1A99A0541EDF16C3004A4665 /* AddNewController.swift */,
 			);
-			name = Wireframe;
+			path = View;
 			sourceTree = "<group>";
 		};
-		1A999D3C1EDEC646004A4665 /* View */ = {
+		1A99A0551EDF16C3004A4665 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D1B1EDC7B79004A4665 /* AddNewController.swift */,
+				1A99A0561EDF16C3004A4665 /* AddListWireframe.swift */,
 			);
-			name = View;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
-		1A999D3D1EDEC64C004A4665 /* Interfaces */ = {
+		1A99A0571EDF16C3004A4665 /* ListItems */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D4C1EDED5A8004A4665 /* AddListModuleProtocols.swift */,
+				1A99A0581EDF16C3004A4665 /* Interactor */,
+				1A99A05A1EDF16C3004A4665 /* ItemsModuleInterfaces */,
+				1A99A05C1EDF16C3004A4665 /* Presenter */,
+				1A99A05E1EDF16C3004A4665 /* View */,
+				1A99A0601EDF16C3004A4665 /* Wireframe */,
 			);
-			name = Interfaces;
+			path = ListItems;
 			sourceTree = "<group>";
 		};
-		1A999D3E1EDEC653004A4665 /* Presenter */ = {
+		1A99A0581EDF16C3004A4665 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D191EDC7B4D004A4665 /* AddListPresenter.swift */,
+				1A99A0591EDF16C3004A4665 /* ItemsInteractor.swift */,
 			);
-			name = Presenter;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
-		1A999D3F1EDEC659004A4665 /* Intreactor */ = {
+		1A99A05A1EDF16C3004A4665 /* ItemsModuleInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D051ED885CB004A4665 /* AddListInteractor.swift */,
+				1A99A05B1EDF16C3004A4665 /* ListItemsModuleProtocols.swift */,
 			);
-			name = Intreactor;
+			path = ItemsModuleInterfaces;
 			sourceTree = "<group>";
 		};
-		1A999D401EDEC68A004A4665 /* Wireframe */ = {
+		1A99A05C1EDF16C3004A4665 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D271EDDBDC1004A4665 /* AddItemWireframe.swift */,
+				1A99A05D1EDF16C3004A4665 /* ItemsPresenter.swift */,
 			);
-			name = Wireframe;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		1A999D411EDEC693004A4665 /* View */ = {
+		1A99A05E1EDF16C3004A4665 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A99A05F1EDF16C3004A4665 /* ItemsController.swift */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
-		1A999D421EDEC69A004A4665 /* Interfaces */ = {
+		1A99A0601EDF16C3004A4665 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */,
+				1A99A0611EDF16C3004A4665 /* ShoppingItemWireframe.swift */,
 			);
-			name = Interfaces;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
-		1A999D431EDEC6A1004A4665 /* Presenter */ = {
+		1A99A0621EDF16C3004A4665 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D231EDDBCD1004A4665 /* AddItemPresenter.swift */,
+				1A99A0631EDF16C3004A4665 /* Interactor */,
+				1A99A0651EDF16C3004A4665 /* ListModuleInterfaces */,
+				1A99A0671EDF16C3004A4665 /* Presenter */,
+				1A99A0691EDF16C3004A4665 /* View */,
+				1A99A06B1EDF16C3004A4665 /* Wireframe */,
 			);
-			name = Presenter;
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
-		1A999D441EDEC6A9004A4665 /* Interactor */ = {
+		1A99A0631EDF16C3004A4665 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D211EDDBB71004A4665 /* AddItemInteractor.swift */,
+				1A99A0641EDF16C3004A4665 /* ListInteractor.swift */,
 			);
-			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
-		1A999D451EDEC6CC004A4665 /* Wireframe */ = {
+		1A99A0651EDF16C3004A4665 /* ListModuleInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D2F1EDDC4F2004A4665 /* ShoppingItemWireframe.swift */,
+				1A99A0661EDF16C3004A4665 /* ListModuleProtocols.swift */,
 			);
-			name = Wireframe;
+			path = ListModuleInterfaces;
 			sourceTree = "<group>";
 		};
-		1A999D461EDEC6D9004A4665 /* View */ = {
+		1A99A0671EDF16C3004A4665 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D2D1EDDC2FF004A4665 /* ItemsController.swift */,
+				1A99A0681EDF16C3004A4665 /* ListPresenter.swift */,
 			);
-			name = View;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		1A999D471EDEC6E2004A4665 /* Interfaces */ = {
+		1A99A0691EDF16C3004A4665 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */,
+				1A99A06A1EDF16C3004A4665 /* ShoppingListController.swift */,
 			);
-			name = Interfaces;
+			path = View;
 			sourceTree = "<group>";
 		};
-		1A999D481EDEC6E8004A4665 /* Presenter */ = {
+		1A99A06B1EDF16C3004A4665 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D2B1EDDC1FF004A4665 /* ItemsPresenter.swift */,
+				1A99A06C1EDF16C3004A4665 /* ShoppingListWireframe.swift */,
 			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		1A999D491EDEC6EF004A4665 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D291EDDC030004A4665 /* ItemsInteractor.swift */,
-			);
-			name = Interactor;
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		B1E902D638E087876C7D08B8 /* Pods */ = {
@@ -478,9 +470,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A99A08E1EDF16D4004A4665 /* Main.storyboard in Resources */,
 				1A69A35C1ED570570073B0ED /* LaunchScreen.storyboard in Resources */,
 				1A69A3591ED570570073B0ED /* Assets.xcassets in Resources */,
-				1A69A3571ED570570073B0ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,51 +531,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A999D241EDDBCD1004A4665 /* AddItemPresenter.swift in Sources */,
-				1A999D141EDC38F2004A4665 /* ShoppingListController.swift in Sources */,
-				1A999D2C1EDDC1FF004A4665 /* ItemsPresenter.swift in Sources */,
-				1A999D531EDEF576004A4665 /* DataManagersInterfaces.swift in Sources */,
-				1A999D0F1EDC30F1004A4665 /* RootWireframe.swift in Sources */,
-				1A999CF91ED5E0DD004A4665 /* RealmShoppingList.swift in Sources */,
-				1A999D4F1EDEDEF6004A4665 /* AddItemModuleProtocols.swift in Sources */,
-				1A999D281EDDBDC1004A4665 /* AddItemWireframe.swift in Sources */,
-				1A999D301EDDC4F2004A4665 /* ShoppingItemWireframe.swift in Sources */,
-				1A69A36C1ED586B80073B0ED /* ShoppingListManager.swift in Sources */,
-				1A999D011ED70912004A4665 /* DataStore.swift in Sources */,
-				1A999D111EDC355D004A4665 /* ShoppingListWireframe.swift in Sources */,
-				1A999D1A1EDC7B4D004A4665 /* AddListPresenter.swift in Sources */,
-				1A69A36E1ED5874A0073B0ED /* ShoppingItemManager.swift in Sources */,
-				1A999D041ED8729E004A4665 /* ListInteractor.swift in Sources */,
-				1A999D1C1EDC7B79004A4665 /* AddNewController.swift in Sources */,
-				1A999D2A1EDDC030004A4665 /* ItemsInteractor.swift in Sources */,
-				1A69A3761ED5D56B0073B0ED /* RealmShoppingItem.swift in Sources */,
-				1A999D4B1EDECB35004A4665 /* ListModuleProtocols.swift in Sources */,
-				1A999D221EDDBB71004A4665 /* AddItemInteractor.swift in Sources */,
-				1A999D201EDD8A50004A4665 /* ItemCategory.swift in Sources */,
-				1A999CFC1ED6D126004A4665 /* ShoppingItem.swift in Sources */,
-				1A999D061ED885CB004A4665 /* AddListInteractor.swift in Sources */,
-				1A999D1E1EDD7311004A4665 /* RealmItemCategory.swift in Sources */,
-				1A999CFE1ED6D134004A4665 /* ShoppingList.swift in Sources */,
-				1A69A3661ED5751C0073B0ED /* ListPresenter.swift in Sources */,
-				1A999D2E1EDDC2FF004A4665 /* ItemsController.swift in Sources */,
-				1A999D511EDEE242004A4665 /* ListItemsModuleProtocols.swift in Sources */,
-				1A999D181EDC5A28004A4665 /* AddListWireframe.swift in Sources */,
-				1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */,
-				1A999D4D1EDED5A8004A4665 /* AddListModuleProtocols.swift in Sources */,
+				1A99A08C1EDF16C3004A4665 /* RootWireframe.swift in Sources */,
+				1A99A0861EDF16C3004A4665 /* ShoppingItemWireframe.swift in Sources */,
+				1A99A0881EDF16C3004A4665 /* ListModuleProtocols.swift in Sources */,
+				1A99A0821EDF16C3004A4665 /* ItemsInteractor.swift in Sources */,
+				1A99A0701EDF16C3004A4665 /* ShoppingItemManager.swift in Sources */,
+				1A99A06E1EDF16C3004A4665 /* AppDelegate.swift in Sources */,
+				1A99A0741EDF16C3004A4665 /* RealmShoppingItem.swift in Sources */,
+				1A99A07B1EDF16C3004A4665 /* AddItemPresenter.swift in Sources */,
+				1A99A0781EDF16C3004A4665 /* ShoppingList.swift in Sources */,
+				1A99A07C1EDF16C3004A4665 /* AddItemWireframe.swift in Sources */,
+				1A99A07A1EDF16C3004A4665 /* AddItemInteractor.swift in Sources */,
+				1A99A07D1EDF16C3004A4665 /* AddListModuleProtocols.swift in Sources */,
+				1A99A06F1EDF16C3004A4665 /* DataManagersInterfaces.swift in Sources */,
+				1A99A0721EDF16C3004A4665 /* DataStore.swift in Sources */,
+				1A99A0791EDF16C3004A4665 /* AddItemModuleProtocols.swift in Sources */,
+				1A99A0891EDF16C3004A4665 /* ListPresenter.swift in Sources */,
+				1A99A0731EDF16C3004A4665 /* RealmItemCategory.swift in Sources */,
+				1A99A07F1EDF16C3004A4665 /* AddListPresenter.swift in Sources */,
+				1A99A0851EDF16C3004A4665 /* ItemsController.swift in Sources */,
+				1A99A0711EDF16C3004A4665 /* ShoppingListManager.swift in Sources */,
+				1A99A07E1EDF16C3004A4665 /* AddListInteractor.swift in Sources */,
+				1A99A0871EDF16C3004A4665 /* ListInteractor.swift in Sources */,
+				1A99A0831EDF16C3004A4665 /* ListItemsModuleProtocols.swift in Sources */,
+				1A99A0751EDF16C3004A4665 /* RealmShoppingList.swift in Sources */,
+				1A99A0811EDF16C3004A4665 /* AddListWireframe.swift in Sources */,
+				1A99A0801EDF16C3004A4665 /* AddNewController.swift in Sources */,
+				1A99A0841EDF16C3004A4665 /* ItemsPresenter.swift in Sources */,
+				1A99A08B1EDF16C3004A4665 /* ShoppingListWireframe.swift in Sources */,
+				1A99A0771EDF16C3004A4665 /* ShoppingItem.swift in Sources */,
+				1A99A0761EDF16C3004A4665 /* ItemCategory.swift in Sources */,
+				1A99A08A1EDF16C3004A4665 /* ShoppingListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A69A3551ED570570073B0ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A69A3561ED570570073B0ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
