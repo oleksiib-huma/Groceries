@@ -8,19 +8,20 @@
 
 import UIKit
 
-class ListPresenter: ListInteractorOutput, ListViewEventHandlerInterface {
+class ListPresenter: ListInteractorOutput {
     
-    // MARK: - Properies
     weak var listView: ShoppingListViewInterface?
     var listInteractor: ListInteractorInterface?
     var listWireframe: ListWireframeInterface?
     
-    // MARK: - ListInteractorOutput
     func foundShoppingLists(lists: [ShoppingList]) {
         listView?.showShoppingLists(lists: lists)
     }
     
-    // MARK: - ListViewEventHandlerInterface
+}
+
+extension ListPresenter: ListViewEventHandlerInterface {
+    
     func addNewListAction() {
         listWireframe?.presentAddListScreen()
     }
@@ -34,11 +35,11 @@ class ListPresenter: ListInteractorOutput, ListViewEventHandlerInterface {
     }
     
     func openList(list: ShoppingList) {
-        listWireframe?.presentItemsScreen(for: list)
+        
     }
     
     func openSettings() {
         
     }
-}
 
+}

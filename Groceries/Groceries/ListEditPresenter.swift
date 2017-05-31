@@ -1,5 +1,5 @@
 //
-//  RootWireframe.swift
+//  ListEditPresenter.swift
 //  Groceries
 //
 //  Created by Oleksiy Bilyi on 5/29/17.
@@ -8,6 +8,9 @@
 
 import UIKit
 
-class RootWireframe {
+class ListEditPresenter {
+
+    var listEditInteractor: ListEditInteractorInterface?
+    
     
 }

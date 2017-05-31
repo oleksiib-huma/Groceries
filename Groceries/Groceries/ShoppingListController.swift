@@ -8,16 +8,26 @@
 
 import UIKit
 
+protocol ListViewEventHandlerInterface {
+    
+    func addNewListAction()
+    func updateView()
+    func editList(list: ShoppingList)
+    func openList(list: ShoppingList)
+    func openSettings()
+}
+
+protocol ShoppingListViewInterface: NSObjectProtocol {
+    func showShoppingLists(lists: [ShoppingList])
+    func reloadData()
+}
+
 class ShoppingListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    // MARK: - Properties
-    var eventHandler: ListViewEventHandlerInterface?
-    fileprivate var shoppinglists: [ShoppingList] = []
-    
-    // MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
-
-    // MARK: - Life Cycle
+    var eventHandler: ListViewEventHandlerInterface?
+    var shoppinglists: [ShoppingList] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -28,9 +38,9 @@ class ShoppingListController: UIViewController, UITableViewDataSource, UITableVi
         super.viewWillAppear(animated)
         tableView.flashScrollIndicators()
         eventHandler?.updateView()
+        
     }
     
-    // MARK: - IBActions
     @IBAction func editButtonAction(_ sender: UIButton) {
         
     }
@@ -39,7 +49,6 @@ class ShoppingListController: UIViewController, UITableViewDataSource, UITableVi
         eventHandler?.addNewListAction()
     }
 
-    // MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -49,13 +58,12 @@ class ShoppingListController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "standart cell")
-        let list = shoppinglists[indexPath.row]
         
         if cell == nil {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: "standart cell")
         }
-        cell?.textLabel?.text = list.name
-        cell?.detailTextLabel?.text = "\(list.created.description) \(list.boughtItemsCount)/\(list.itemsCount)"
+        cell?.textLabel?.text = shoppinglists[indexPath.row].name
+        cell?.detailTextLabel?.text = shoppinglists[indexPath.row].created.description
         
         if let cell = cell {
             return cell
@@ -63,7 +71,6 @@ class ShoppingListController: UIViewController, UITableViewDataSource, UITableVi
         return UITableViewCell()
     }
     
-    // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -71,15 +78,9 @@ class ShoppingListController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return .delete
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        eventHandler?.openList(list: shoppinglists[indexPath.row])
-    }
 
 }
 
-// MARK: - ShoppingListViewInterface
 extension ShoppingListController: ShoppingListViewInterface {
     
     func showShoppingLists(lists: [ShoppingList]) {
