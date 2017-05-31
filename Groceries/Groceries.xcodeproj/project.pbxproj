@@ -7,81 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3511ED570570073B0ED /* AppDelegate.swift */; };
 		1A69A3571ED570570073B0ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3551ED570570073B0ED /* Main.storyboard */; };
 		1A69A3591ED570570073B0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3581ED570570073B0ED /* Assets.xcassets */; };
 		1A69A35C1ED570570073B0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */; };
-		1A69A3661ED5751C0073B0ED /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3651ED5751C0073B0ED /* ListPresenter.swift */; };
-		1A69A36C1ED586B80073B0ED /* ShoppingListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */; };
-		1A69A36E1ED5874A0073B0ED /* ShoppingItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */; };
-		1A69A3761ED5D56B0073B0ED /* RealmShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3751ED5D56B0073B0ED /* RealmShoppingItem.swift */; };
-		1A999CF91ED5E0DD004A4665 /* RealmShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999CF81ED5E0DD004A4665 /* RealmShoppingList.swift */; };
-		1A999CFC1ED6D126004A4665 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999CFB1ED6D126004A4665 /* ShoppingItem.swift */; };
-		1A999CFE1ED6D134004A4665 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999CFD1ED6D134004A4665 /* ShoppingList.swift */; };
-		1A999D011ED70912004A4665 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D001ED70912004A4665 /* DataStore.swift */; };
-		1A999D041ED8729E004A4665 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D031ED8729E004A4665 /* ListInteractor.swift */; };
-		1A999D061ED885CB004A4665 /* AddListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D051ED885CB004A4665 /* AddListInteractor.swift */; };
-		1A999D0F1EDC30F1004A4665 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D0E1EDC30F1004A4665 /* RootWireframe.swift */; };
-		1A999D111EDC355D004A4665 /* ShoppingListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D101EDC355D004A4665 /* ShoppingListWireframe.swift */; };
-		1A999D141EDC38F2004A4665 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D131EDC38F2004A4665 /* ShoppingListController.swift */; };
-		1A999D181EDC5A28004A4665 /* AddListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D171EDC5A28004A4665 /* AddListWireframe.swift */; };
-		1A999D1A1EDC7B4D004A4665 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D191EDC7B4D004A4665 /* AddListPresenter.swift */; };
-		1A999D1C1EDC7B79004A4665 /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D1B1EDC7B79004A4665 /* AddNewController.swift */; };
-		1A999D1E1EDD7311004A4665 /* RealmItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D1D1EDD7311004A4665 /* RealmItemCategory.swift */; };
-		1A999D201EDD8A50004A4665 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D1F1EDD8A50004A4665 /* ItemCategory.swift */; };
-		1A999D221EDDBB71004A4665 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D211EDDBB71004A4665 /* AddItemInteractor.swift */; };
-		1A999D241EDDBCD1004A4665 /* AddItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D231EDDBCD1004A4665 /* AddItemPresenter.swift */; };
-		1A999D281EDDBDC1004A4665 /* AddItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D271EDDBDC1004A4665 /* AddItemWireframe.swift */; };
-		1A999D2A1EDDC030004A4665 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D291EDDC030004A4665 /* ItemsInteractor.swift */; };
-		1A999D2C1EDDC1FF004A4665 /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D2B1EDDC1FF004A4665 /* ItemsPresenter.swift */; };
-		1A999D2E1EDDC2FF004A4665 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D2D1EDDC2FF004A4665 /* ItemsController.swift */; };
-		1A999D301EDDC4F2004A4665 /* ShoppingItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D2F1EDDC4F2004A4665 /* ShoppingItemWireframe.swift */; };
-		1A999D4B1EDECB35004A4665 /* ListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4A1EDECB35004A4665 /* ListModuleProtocols.swift */; };
-		1A999D4D1EDED5A8004A4665 /* AddListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4C1EDED5A8004A4665 /* AddListModuleProtocols.swift */; };
-		1A999D4F1EDEDEF6004A4665 /* AddItemModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */; };
-		1A999D511EDEE242004A4665 /* ListItemsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */; };
-		1A999D531EDEF576004A4665 /* DataManagersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */; };
+		1A999E4B1EDEFDF9004A4665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E231EDEFDF9004A4665 /* AppDelegate.swift */; };
+		1A999E4C1EDEFDF9004A4665 /* DataManagersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E251EDEFDF9004A4665 /* DataManagersInterfaces.swift */; };
+		1A999E4D1EDEFDF9004A4665 /* ShoppingItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E261EDEFDF9004A4665 /* ShoppingItemManager.swift */; };
+		1A999E4E1EDEFDF9004A4665 /* ShoppingListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E271EDEFDF9004A4665 /* ShoppingListManager.swift */; };
+		1A999E4F1EDEFDF9004A4665 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E291EDEFDF9004A4665 /* DataStore.swift */; };
+		1A999E501EDEFDF9004A4665 /* RealmItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E2A1EDEFDF9004A4665 /* RealmItemCategory.swift */; };
+		1A999E511EDEFDF9004A4665 /* RealmShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E2B1EDEFDF9004A4665 /* RealmShoppingItem.swift */; };
+		1A999E521EDEFDF9004A4665 /* RealmShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E2C1EDEFDF9004A4665 /* RealmShoppingList.swift */; };
+		1A999E531EDEFDF9004A4665 /* ItemCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E2E1EDEFDF9004A4665 /* ItemCategory.swift */; };
+		1A999E541EDEFDF9004A4665 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E2F1EDEFDF9004A4665 /* ShoppingItem.swift */; };
+		1A999E551EDEFDF9004A4665 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E301EDEFDF9004A4665 /* ShoppingList.swift */; };
+		1A999E561EDEFDF9004A4665 /* AddItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E331EDEFDF9004A4665 /* AddItemInteractor.swift */; };
+		1A999E571EDEFDF9004A4665 /* AddItemModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E341EDEFDF9004A4665 /* AddItemModuleProtocols.swift */; };
+		1A999E581EDEFDF9004A4665 /* AddItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E351EDEFDF9004A4665 /* AddItemPresenter.swift */; };
+		1A999E591EDEFDF9004A4665 /* AddItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E361EDEFDF9004A4665 /* AddItemWireframe.swift */; };
+		1A999E5A1EDEFDF9004A4665 /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E371EDEFDF9004A4665 /* AddNewController.swift */; };
+		1A999E5B1EDEFDF9004A4665 /* AddListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E391EDEFDF9004A4665 /* AddListInteractor.swift */; };
+		1A999E5C1EDEFDF9004A4665 /* AddListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E3A1EDEFDF9004A4665 /* AddListModuleProtocols.swift */; };
+		1A999E5D1EDEFDF9004A4665 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E3B1EDEFDF9004A4665 /* AddListPresenter.swift */; };
+		1A999E5E1EDEFDF9004A4665 /* AddListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E3C1EDEFDF9004A4665 /* AddListWireframe.swift */; };
+		1A999E5F1EDEFDF9004A4665 /* AddNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E3D1EDEFDF9004A4665 /* AddNewController.swift */; };
+		1A999E601EDEFDF9004A4665 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E3F1EDEFDF9004A4665 /* ItemsController.swift */; };
+		1A999E611EDEFDF9004A4665 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E401EDEFDF9004A4665 /* ItemsInteractor.swift */; };
+		1A999E621EDEFDF9004A4665 /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E411EDEFDF9004A4665 /* ItemsPresenter.swift */; };
+		1A999E631EDEFDF9004A4665 /* ListItemsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E421EDEFDF9004A4665 /* ListItemsModuleProtocols.swift */; };
+		1A999E641EDEFDF9004A4665 /* ShoppingItemWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E431EDEFDF9004A4665 /* ShoppingItemWireframe.swift */; };
+		1A999E651EDEFDF9004A4665 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E451EDEFDF9004A4665 /* ListInteractor.swift */; };
+		1A999E661EDEFDF9004A4665 /* ListModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E461EDEFDF9004A4665 /* ListModuleProtocols.swift */; };
+		1A999E671EDEFDF9004A4665 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E471EDEFDF9004A4665 /* ListPresenter.swift */; };
+		1A999E681EDEFDF9004A4665 /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E481EDEFDF9004A4665 /* ShoppingListController.swift */; };
+		1A999E691EDEFDF9004A4665 /* ShoppingListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E491EDEFDF9004A4665 /* ShoppingListWireframe.swift */; };
+		1A999E6A1EDEFDF9004A4665 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999E4A1EDEFDF9004A4665 /* RootWireframe.swift */; };
 		BCE092FE698B984BAB31C8FF /* Pods_Groceries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7844241E75C4F4458594C32 /* Pods_Groceries.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1336E36C3EAA3F3238E8585B /* Pods-Groceries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groceries.release.xcconfig"; path = "Pods/Target Support Files/Pods-Groceries/Pods-Groceries.release.xcconfig"; sourceTree = "<group>"; };
 		1A69A34E1ED570570073B0ED /* Groceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A69A3511ED570570073B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A69A3561ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A69A3581ED570570073B0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A69A35B1ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A69A35D1ED570570073B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A69A3651ED5751C0073B0ED /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListManager.swift; path = ../ShoppingListManager.swift; sourceTree = "<group>"; };
-		1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemManager.swift; sourceTree = "<group>"; };
-		1A69A3751ED5D56B0073B0ED /* RealmShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingItem.swift; sourceTree = "<group>"; };
-		1A999CF81ED5E0DD004A4665 /* RealmShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingList.swift; sourceTree = "<group>"; };
-		1A999CFB1ED6D126004A4665 /* ShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
-		1A999CFD1ED6D134004A4665 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
-		1A999D001ED70912004A4665 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		1A999D031ED8729E004A4665 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
-		1A999D051ED885CB004A4665 /* AddListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListInteractor.swift; sourceTree = "<group>"; };
-		1A999D0E1EDC30F1004A4665 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
-		1A999D101EDC355D004A4665 /* ShoppingListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListWireframe.swift; sourceTree = "<group>"; };
-		1A999D131EDC38F2004A4665 /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
-		1A999D171EDC5A28004A4665 /* AddListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListWireframe.swift; sourceTree = "<group>"; };
-		1A999D191EDC7B4D004A4665 /* AddListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
-		1A999D1B1EDC7B79004A4665 /* AddNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewController.swift; sourceTree = "<group>"; };
-		1A999D1D1EDD7311004A4665 /* RealmItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmItemCategory.swift; sourceTree = "<group>"; };
-		1A999D1F1EDD8A50004A4665 /* ItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
-		1A999D211EDDBB71004A4665 /* AddItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
-		1A999D231EDDBCD1004A4665 /* AddItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemPresenter.swift; sourceTree = "<group>"; };
-		1A999D271EDDBDC1004A4665 /* AddItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemWireframe.swift; sourceTree = "<group>"; };
-		1A999D291EDDC030004A4665 /* ItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
-		1A999D2B1EDDC1FF004A4665 /* ItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
-		1A999D2D1EDDC2FF004A4665 /* ItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
-		1A999D2F1EDDC4F2004A4665 /* ShoppingItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemWireframe.swift; sourceTree = "<group>"; };
-		1A999D4A1EDECB35004A4665 /* ListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D4C1EDED5A8004A4665 /* AddListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsModuleProtocols.swift; sourceTree = "<group>"; };
-		1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagersInterfaces.swift; sourceTree = "<group>"; };
+		1A999E231EDEFDF9004A4665 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A999E251EDEFDF9004A4665 /* DataManagersInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagersInterfaces.swift; sourceTree = "<group>"; };
+		1A999E261EDEFDF9004A4665 /* ShoppingItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemManager.swift; sourceTree = "<group>"; };
+		1A999E271EDEFDF9004A4665 /* ShoppingListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListManager.swift; sourceTree = "<group>"; };
+		1A999E291EDEFDF9004A4665 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		1A999E2A1EDEFDF9004A4665 /* RealmItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmItemCategory.swift; sourceTree = "<group>"; };
+		1A999E2B1EDEFDF9004A4665 /* RealmShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingItem.swift; sourceTree = "<group>"; };
+		1A999E2C1EDEFDF9004A4665 /* RealmShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmShoppingList.swift; sourceTree = "<group>"; };
+		1A999E2E1EDEFDF9004A4665 /* ItemCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCategory.swift; sourceTree = "<group>"; };
+		1A999E2F1EDEFDF9004A4665 /* ShoppingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		1A999E301EDEFDF9004A4665 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		1A999E331EDEFDF9004A4665 /* AddItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemInteractor.swift; sourceTree = "<group>"; };
+		1A999E341EDEFDF9004A4665 /* AddItemModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemModuleProtocols.swift; sourceTree = "<group>"; };
+		1A999E351EDEFDF9004A4665 /* AddItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemPresenter.swift; sourceTree = "<group>"; };
+		1A999E361EDEFDF9004A4665 /* AddItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemWireframe.swift; sourceTree = "<group>"; };
+		1A999E371EDEFDF9004A4665 /* AddNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewController.swift; sourceTree = "<group>"; };
+		1A999E391EDEFDF9004A4665 /* AddListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListInteractor.swift; sourceTree = "<group>"; };
+		1A999E3A1EDEFDF9004A4665 /* AddListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListModuleProtocols.swift; sourceTree = "<group>"; };
+		1A999E3B1EDEFDF9004A4665 /* AddListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
+		1A999E3C1EDEFDF9004A4665 /* AddListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListWireframe.swift; sourceTree = "<group>"; };
+		1A999E3D1EDEFDF9004A4665 /* AddNewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewController.swift; sourceTree = "<group>"; };
+		1A999E3F1EDEFDF9004A4665 /* ItemsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
+		1A999E401EDEFDF9004A4665 /* ItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
+		1A999E411EDEFDF9004A4665 /* ItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
+		1A999E421EDEFDF9004A4665 /* ListItemsModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsModuleProtocols.swift; sourceTree = "<group>"; };
+		1A999E431EDEFDF9004A4665 /* ShoppingItemWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemWireframe.swift; sourceTree = "<group>"; };
+		1A999E451EDEFDF9004A4665 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		1A999E461EDEFDF9004A4665 /* ListModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleProtocols.swift; sourceTree = "<group>"; };
+		1A999E471EDEFDF9004A4665 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		1A999E481EDEFDF9004A4665 /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
+		1A999E491EDEFDF9004A4665 /* ShoppingListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListWireframe.swift; sourceTree = "<group>"; };
+		1A999E4A1EDEFDF9004A4665 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		A7844241E75C4F4458594C32 /* Pods_Groceries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Groceries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85EB86A5DE82E75336281EB /* Pods-Groceries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groceries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Groceries/Pods-Groceries.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,283 +121,124 @@
 		1A69A3501ED570570073B0ED /* Groceries */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3711ED58AB00073B0ED /* Classes */,
+				1A999E221EDEFDF9004A4665 /* Classes */,
 				1A69A3721ED58AD40073B0ED /* Storyboards */,
 				1A69A3581ED570570073B0ED /* Assets.xcassets */,
-				1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */,
 				1A69A35D1ED570570073B0ED /* Info.plist */,
 			);
 			path = Groceries;
 			sourceTree = "<group>";
 		};
-		1A69A36F1ED58A720073B0ED /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */,
-				1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */,
-				1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */,
-			);
-			name = DataManagers;
-			sourceTree = "<group>";
-		};
-		1A69A3711ED58AB00073B0ED /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D311EDEC444004A4665 /* Modules */,
-				1A69A3741ED5D5260073B0ED /* DataModel */,
-				1A999CFA1ED6D0DE004A4665 /* Entities */,
-				1A69A36F1ED58A720073B0ED /* DataManagers */,
-				1A69A3511ED570570073B0ED /* AppDelegate.swift */,
-				1A999D0E1EDC30F1004A4665 /* RootWireframe.swift */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		1A69A3721ED58AD40073B0ED /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */,
 				1A69A3551ED570570073B0ED /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
-		1A69A3741ED5D5260073B0ED /* DataModel */ = {
+		1A999E221EDEFDF9004A4665 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3751ED5D56B0073B0ED /* RealmShoppingItem.swift */,
-				1A999CF81ED5E0DD004A4665 /* RealmShoppingList.swift */,
-				1A999D1D1EDD7311004A4665 /* RealmItemCategory.swift */,
-				1A999D001ED70912004A4665 /* DataStore.swift */,
+				1A999E311EDEFDF9004A4665 /* Modules */,
+				1A999E281EDEFDF9004A4665 /* DataModel */,
+				1A999E241EDEFDF9004A4665 /* DataManagers */,
+				1A999E2D1EDEFDF9004A4665 /* Entities */,
+				1A999E4A1EDEFDF9004A4665 /* RootWireframe.swift */,
+				1A999E231EDEFDF9004A4665 /* AppDelegate.swift */,
 			);
-			name = DataModel;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		1A999CFA1ED6D0DE004A4665 /* Entities */ = {
+		1A999E241EDEFDF9004A4665 /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
-				1A999CFB1ED6D126004A4665 /* ShoppingItem.swift */,
-				1A999D1F1EDD8A50004A4665 /* ItemCategory.swift */,
-				1A999CFD1ED6D134004A4665 /* ShoppingList.swift */,
+				1A999E251EDEFDF9004A4665 /* DataManagersInterfaces.swift */,
+				1A999E261EDEFDF9004A4665 /* ShoppingItemManager.swift */,
+				1A999E271EDEFDF9004A4665 /* ShoppingListManager.swift */,
 			);
-			name = Entities;
+			path = DataManagers;
 			sourceTree = "<group>";
 		};
-		1A999D311EDEC444004A4665 /* Modules */ = {
+		1A999E281EDEFDF9004A4665 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D321EDEC45B004A4665 /* ShoppingList */,
-				1A999D331EDEC473004A4665 /* AddShoppingList */,
-				1A999D351EDEC4BE004A4665 /* AddListItem */,
-				1A999D341EDEC48D004A4665 /* ListItems */,
+				1A999E291EDEFDF9004A4665 /* DataStore.swift */,
+				1A999E2A1EDEFDF9004A4665 /* RealmItemCategory.swift */,
+				1A999E2B1EDEFDF9004A4665 /* RealmShoppingItem.swift */,
+				1A999E2C1EDEFDF9004A4665 /* RealmShoppingList.swift */,
 			);
-			name = Modules;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
-		1A999D321EDEC45B004A4665 /* ShoppingList */ = {
+		1A999E2D1EDEFDF9004A4665 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D361EDEC5A1004A4665 /* Interactor */,
-				1A999D371EDEC5C8004A4665 /* Presenter */,
-				1A999D3A1EDEC5DF004A4665 /* Interfaces */,
-				1A999D381EDEC5CF004A4665 /* View */,
-				1A999D391EDEC5D7004A4665 /* Wireframe */,
+				1A999E2E1EDEFDF9004A4665 /* ItemCategory.swift */,
+				1A999E2F1EDEFDF9004A4665 /* ShoppingItem.swift */,
+				1A999E301EDEFDF9004A4665 /* ShoppingList.swift */,
 			);
-			name = ShoppingList;
+			path = Entities;
 			sourceTree = "<group>";
 		};
-		1A999D331EDEC473004A4665 /* AddShoppingList */ = {
+		1A999E311EDEFDF9004A4665 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D3F1EDEC659004A4665 /* Intreactor */,
-				1A999D3E1EDEC653004A4665 /* Presenter */,
-				1A999D3D1EDEC64C004A4665 /* Interfaces */,
-				1A999D3C1EDEC646004A4665 /* View */,
-				1A999D3B1EDEC63E004A4665 /* Wireframe */,
+				1A999E441EDEFDF9004A4665 /* ShoppingList */,
+				1A999E321EDEFDF9004A4665 /* AddListItem */,
+				1A999E381EDEFDF9004A4665 /* AddShoppingList */,
+				1A999E3E1EDEFDF9004A4665 /* ListItems */,
 			);
-			name = AddShoppingList;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		1A999D341EDEC48D004A4665 /* ListItems */ = {
+		1A999E321EDEFDF9004A4665 /* AddListItem */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D491EDEC6EF004A4665 /* Interactor */,
-				1A999D481EDEC6E8004A4665 /* Presenter */,
-				1A999D471EDEC6E2004A4665 /* Interfaces */,
-				1A999D461EDEC6D9004A4665 /* View */,
-				1A999D451EDEC6CC004A4665 /* Wireframe */,
+				1A999E331EDEFDF9004A4665 /* AddItemInteractor.swift */,
+				1A999E341EDEFDF9004A4665 /* AddItemModuleProtocols.swift */,
+				1A999E351EDEFDF9004A4665 /* AddItemPresenter.swift */,
+				1A999E361EDEFDF9004A4665 /* AddItemWireframe.swift */,
+				1A999E371EDEFDF9004A4665 /* AddNewController.swift */,
 			);
-			name = ListItems;
+			path = AddListItem;
 			sourceTree = "<group>";
 		};
-		1A999D351EDEC4BE004A4665 /* AddListItem */ = {
+		1A999E381EDEFDF9004A4665 /* AddShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D441EDEC6A9004A4665 /* Interactor */,
-				1A999D431EDEC6A1004A4665 /* Presenter */,
-				1A999D421EDEC69A004A4665 /* Interfaces */,
-				1A999D411EDEC693004A4665 /* View */,
-				1A999D401EDEC68A004A4665 /* Wireframe */,
+				1A999E391EDEFDF9004A4665 /* AddListInteractor.swift */,
+				1A999E3A1EDEFDF9004A4665 /* AddListModuleProtocols.swift */,
+				1A999E3B1EDEFDF9004A4665 /* AddListPresenter.swift */,
+				1A999E3C1EDEFDF9004A4665 /* AddListWireframe.swift */,
+				1A999E3D1EDEFDF9004A4665 /* AddNewController.swift */,
 			);
-			name = AddListItem;
+			path = AddShoppingList;
 			sourceTree = "<group>";
 		};
-		1A999D361EDEC5A1004A4665 /* Interactor */ = {
+		1A999E3E1EDEFDF9004A4665 /* ListItems */ = {
 			isa = PBXGroup;
 			children = (
-				1A999D031ED8729E004A4665 /* ListInteractor.swift */,
+				1A999E3F1EDEFDF9004A4665 /* ItemsController.swift */,
+				1A999E401EDEFDF9004A4665 /* ItemsInteractor.swift */,
+				1A999E411EDEFDF9004A4665 /* ItemsPresenter.swift */,
+				1A999E421EDEFDF9004A4665 /* ListItemsModuleProtocols.swift */,
+				1A999E431EDEFDF9004A4665 /* ShoppingItemWireframe.swift */,
 			);
-			name = Interactor;
+			path = ListItems;
 			sourceTree = "<group>";
 		};
-		1A999D371EDEC5C8004A4665 /* Presenter */ = {
+		1A999E441EDEFDF9004A4665 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				1A69A3651ED5751C0073B0ED /* ListPresenter.swift */,
+				1A999E451EDEFDF9004A4665 /* ListInteractor.swift */,
+				1A999E461EDEFDF9004A4665 /* ListModuleProtocols.swift */,
+				1A999E471EDEFDF9004A4665 /* ListPresenter.swift */,
+				1A999E481EDEFDF9004A4665 /* ShoppingListController.swift */,
+				1A999E491EDEFDF9004A4665 /* ShoppingListWireframe.swift */,
 			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		1A999D381EDEC5CF004A4665 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D131EDC38F2004A4665 /* ShoppingListController.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		1A999D391EDEC5D7004A4665 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D101EDC355D004A4665 /* ShoppingListWireframe.swift */,
-			);
-			name = Wireframe;
-			sourceTree = "<group>";
-		};
-		1A999D3A1EDEC5DF004A4665 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D4A1EDECB35004A4665 /* ListModuleProtocols.swift */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		1A999D3B1EDEC63E004A4665 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D171EDC5A28004A4665 /* AddListWireframe.swift */,
-			);
-			name = Wireframe;
-			sourceTree = "<group>";
-		};
-		1A999D3C1EDEC646004A4665 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D1B1EDC7B79004A4665 /* AddNewController.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		1A999D3D1EDEC64C004A4665 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D4C1EDED5A8004A4665 /* AddListModuleProtocols.swift */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		1A999D3E1EDEC653004A4665 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D191EDC7B4D004A4665 /* AddListPresenter.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		1A999D3F1EDEC659004A4665 /* Intreactor */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D051ED885CB004A4665 /* AddListInteractor.swift */,
-			);
-			name = Intreactor;
-			sourceTree = "<group>";
-		};
-		1A999D401EDEC68A004A4665 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D271EDDBDC1004A4665 /* AddItemWireframe.swift */,
-			);
-			name = Wireframe;
-			sourceTree = "<group>";
-		};
-		1A999D411EDEC693004A4665 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		1A999D421EDEC69A004A4665 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		1A999D431EDEC6A1004A4665 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D231EDDBCD1004A4665 /* AddItemPresenter.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		1A999D441EDEC6A9004A4665 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D211EDDBB71004A4665 /* AddItemInteractor.swift */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		1A999D451EDEC6CC004A4665 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D2F1EDDC4F2004A4665 /* ShoppingItemWireframe.swift */,
-			);
-			name = Wireframe;
-			sourceTree = "<group>";
-		};
-		1A999D461EDEC6D9004A4665 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D2D1EDDC2FF004A4665 /* ItemsController.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		1A999D471EDEC6E2004A4665 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		1A999D481EDEC6E8004A4665 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D2B1EDDC1FF004A4665 /* ItemsPresenter.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		1A999D491EDEC6EF004A4665 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				1A999D291EDDC030004A4665 /* ItemsInteractor.swift */,
-			);
-			name = Interactor;
+			path = ShoppingList;
 			sourceTree = "<group>";
 		};
 		B1E902D638E087876C7D08B8 /* Pods */ = {
@@ -539,37 +382,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A999D241EDDBCD1004A4665 /* AddItemPresenter.swift in Sources */,
-				1A999D141EDC38F2004A4665 /* ShoppingListController.swift in Sources */,
-				1A999D2C1EDDC1FF004A4665 /* ItemsPresenter.swift in Sources */,
-				1A999D531EDEF576004A4665 /* DataManagersInterfaces.swift in Sources */,
-				1A999D0F1EDC30F1004A4665 /* RootWireframe.swift in Sources */,
-				1A999CF91ED5E0DD004A4665 /* RealmShoppingList.swift in Sources */,
-				1A999D4F1EDEDEF6004A4665 /* AddItemModuleProtocols.swift in Sources */,
-				1A999D281EDDBDC1004A4665 /* AddItemWireframe.swift in Sources */,
-				1A999D301EDDC4F2004A4665 /* ShoppingItemWireframe.swift in Sources */,
-				1A69A36C1ED586B80073B0ED /* ShoppingListManager.swift in Sources */,
-				1A999D011ED70912004A4665 /* DataStore.swift in Sources */,
-				1A999D111EDC355D004A4665 /* ShoppingListWireframe.swift in Sources */,
-				1A999D1A1EDC7B4D004A4665 /* AddListPresenter.swift in Sources */,
-				1A69A36E1ED5874A0073B0ED /* ShoppingItemManager.swift in Sources */,
-				1A999D041ED8729E004A4665 /* ListInteractor.swift in Sources */,
-				1A999D1C1EDC7B79004A4665 /* AddNewController.swift in Sources */,
-				1A999D2A1EDDC030004A4665 /* ItemsInteractor.swift in Sources */,
-				1A69A3761ED5D56B0073B0ED /* RealmShoppingItem.swift in Sources */,
-				1A999D4B1EDECB35004A4665 /* ListModuleProtocols.swift in Sources */,
-				1A999D221EDDBB71004A4665 /* AddItemInteractor.swift in Sources */,
-				1A999D201EDD8A50004A4665 /* ItemCategory.swift in Sources */,
-				1A999CFC1ED6D126004A4665 /* ShoppingItem.swift in Sources */,
-				1A999D061ED885CB004A4665 /* AddListInteractor.swift in Sources */,
-				1A999D1E1EDD7311004A4665 /* RealmItemCategory.swift in Sources */,
-				1A999CFE1ED6D134004A4665 /* ShoppingList.swift in Sources */,
-				1A69A3661ED5751C0073B0ED /* ListPresenter.swift in Sources */,
-				1A999D2E1EDDC2FF004A4665 /* ItemsController.swift in Sources */,
-				1A999D511EDEE242004A4665 /* ListItemsModuleProtocols.swift in Sources */,
-				1A999D181EDC5A28004A4665 /* AddListWireframe.swift in Sources */,
-				1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */,
-				1A999D4D1EDED5A8004A4665 /* AddListModuleProtocols.swift in Sources */,
+				1A999E5F1EDEFDF9004A4665 /* AddNewController.swift in Sources */,
+				1A999E621EDEFDF9004A4665 /* ItemsPresenter.swift in Sources */,
+				1A999E6A1EDEFDF9004A4665 /* RootWireframe.swift in Sources */,
+				1A999E5E1EDEFDF9004A4665 /* AddListWireframe.swift in Sources */,
+				1A999E5D1EDEFDF9004A4665 /* AddListPresenter.swift in Sources */,
+				1A999E671EDEFDF9004A4665 /* ListPresenter.swift in Sources */,
+				1A999E611EDEFDF9004A4665 /* ItemsInteractor.swift in Sources */,
+				1A999E661EDEFDF9004A4665 /* ListModuleProtocols.swift in Sources */,
+				1A999E4C1EDEFDF9004A4665 /* DataManagersInterfaces.swift in Sources */,
+				1A999E4B1EDEFDF9004A4665 /* AppDelegate.swift in Sources */,
+				1A999E4D1EDEFDF9004A4665 /* ShoppingItemManager.swift in Sources */,
+				1A999E541EDEFDF9004A4665 /* ShoppingItem.swift in Sources */,
+				1A999E5B1EDEFDF9004A4665 /* AddListInteractor.swift in Sources */,
+				1A999E571EDEFDF9004A4665 /* AddItemModuleProtocols.swift in Sources */,
+				1A999E531EDEFDF9004A4665 /* ItemCategory.swift in Sources */,
+				1A999E691EDEFDF9004A4665 /* ShoppingListWireframe.swift in Sources */,
+				1A999E5C1EDEFDF9004A4665 /* AddListModuleProtocols.swift in Sources */,
+				1A999E561EDEFDF9004A4665 /* AddItemInteractor.swift in Sources */,
+				1A999E581EDEFDF9004A4665 /* AddItemPresenter.swift in Sources */,
+				1A999E641EDEFDF9004A4665 /* ShoppingItemWireframe.swift in Sources */,
+				1A999E4F1EDEFDF9004A4665 /* DataStore.swift in Sources */,
+				1A999E4E1EDEFDF9004A4665 /* ShoppingListManager.swift in Sources */,
+				1A999E501EDEFDF9004A4665 /* RealmItemCategory.swift in Sources */,
+				1A999E651EDEFDF9004A4665 /* ListInteractor.swift in Sources */,
+				1A999E681EDEFDF9004A4665 /* ShoppingListController.swift in Sources */,
+				1A999E521EDEFDF9004A4665 /* RealmShoppingList.swift in Sources */,
+				1A999E551EDEFDF9004A4665 /* ShoppingList.swift in Sources */,
+				1A999E631EDEFDF9004A4665 /* ListItemsModuleProtocols.swift in Sources */,
+				1A999E591EDEFDF9004A4665 /* AddItemWireframe.swift in Sources */,
+				1A999E5A1EDEFDF9004A4665 /* AddNewController.swift in Sources */,
+				1A999E511EDEFDF9004A4665 /* RealmShoppingItem.swift in Sources */,
+				1A999E601EDEFDF9004A4665 /* ItemsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
