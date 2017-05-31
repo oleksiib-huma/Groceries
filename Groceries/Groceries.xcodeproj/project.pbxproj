@@ -12,7 +12,10 @@
 		1A69A3591ED570570073B0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A3581ED570570073B0ED /* Assets.xcassets */; };
 		1A69A35C1ED570570073B0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A69A35A1ED570570073B0ED /* LaunchScreen.storyboard */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 		1A69A3661ED5751C0073B0ED /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A3651ED5751C0073B0ED /* ListPresenter.swift */; };
 		1A69A36C1ED586B80073B0ED /* ShoppingListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */; };
 		1A69A36E1ED5874A0073B0ED /* ShoppingItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */; };
@@ -43,6 +46,9 @@
 		1A999D4F1EDEDEF6004A4665 /* AddItemModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */; };
 		1A999D511EDEE242004A4665 /* ListItemsModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */; };
 		1A999D531EDEF576004A4665 /* DataManagersInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */; };
+<<<<<<< HEAD
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
+=======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 		BCE092FE698B984BAB31C8FF /* Pods_Groceries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7844241E75C4F4458594C32 /* Pods_Groceries.framework */; };
 /* End PBXBuildFile section */
@@ -56,7 +62,10 @@
 		1A69A35B1ED570570073B0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A69A35D1ED570570073B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 		1A69A3651ED5751C0073B0ED /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		1A69A36B1ED586B80073B0ED /* ShoppingListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingListManager.swift; path = ../ShoppingListManager.swift; sourceTree = "<group>"; };
 		1A69A36D1ED5874A0073B0ED /* ShoppingItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingItemManager.swift; sourceTree = "<group>"; };
@@ -87,6 +96,9 @@
 		1A999D4E1EDEDEF6004A4665 /* AddItemModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemModuleProtocols.swift; sourceTree = "<group>"; };
 		1A999D501EDEE242004A4665 /* ListItemsModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemsModuleProtocols.swift; sourceTree = "<group>"; };
 		1A999D521EDEF576004A4665 /* DataManagersInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagersInterfaces.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
+=======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 		A7844241E75C4F4458594C32 /* Pods_Groceries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Groceries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85EB86A5DE82E75336281EB /* Pods-Groceries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Groceries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Groceries/Pods-Groceries.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +138,10 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				1A69A3711ED58AB00073B0ED /* Classes */,
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 =======
 				1A69A3711ED58AB00073B0ED /* Classes */,
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
@@ -169,7 +185,10 @@
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 		1A69A3741ED5D5260073B0ED /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,7 +571,10 @@
 			buildActionMask = 2147483647;
 			files = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
 				1A999D241EDDBCD1004A4665 /* AddItemPresenter.swift in Sources */,
 				1A999D141EDC38F2004A4665 /* ShoppingListController.swift in Sources */,
 				1A999D2C1EDDC1FF004A4665 /* ItemsPresenter.swift in Sources */,
@@ -584,6 +606,9 @@
 				1A999D181EDC5A28004A4665 /* AddListWireframe.swift in Sources */,
 				1A69A3521ED570570073B0ED /* AppDelegate.swift in Sources */,
 				1A999D4D1EDED5A8004A4665 /* AddListModuleProtocols.swift in Sources */,
+<<<<<<< HEAD
+>>>>>>> parent of eb126a8... Hierarchic folders sort.
+=======
 >>>>>>> parent of eb126a8... Hierarchic folders sort.
 			);
 			runOnlyForDeploymentPostprocessing = 0;
