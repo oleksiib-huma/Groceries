@@ -1,2 +1,2 @@
 # Groceries
-Simple groceries ios app
+Simple groceries iOS app using VIPER architecture pattern
