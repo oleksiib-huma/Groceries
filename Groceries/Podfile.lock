@@ -1,19 +1,19 @@
 PODS:
-  - Hero (0.3.3)
-  - Realm (2.4.3):
-    - Realm/Headers (= 2.4.3)
-  - Realm/Headers (2.4.3)
-  - RealmSwift (2.4.3):
-    - Realm (= 2.4.3)
+  - Hero (0.3.6)
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
+  - RealmSwift (2.7.0):
+    - Realm (= 2.7.0)
 
 DEPENDENCIES:
   - Hero
   - RealmSwift
 
 SPEC CHECKSUMS:
-  Hero: bee4e762e84185b16a902dd11335c119515bb912
-  Realm: e08d60b0048ccccd3949c8c28a92c4db5712d7e9
-  RealmSwift: 30d49739ccb3385d201242736ca4dda56aec9dfc
+  Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
+  RealmSwift: 6d06425d3900c86473c4f323bf6949b43fca22bc
 
 PODFILE CHECKSUM: e48d5399a8ecec6b36b739506d5065382c477f08
 
